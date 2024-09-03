@@ -1,0 +1,60 @@
+<snippet>
+    <content><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    ${1}
+    return 0;
+}
+    ]]></content>
+    <tabTrigger>boilercpp</tabTrigger>
+    <description>Basic C++ Boilerplate</description>
+    <scope>source.c++</scope>
+</snippet>
+
+<snippet>
+    <content><![CDATA[
+class node {
+  public:
+  int data;
+  node* next;
+  node (int data) {
+    this->data = data;
+    this->next = nullptr;
+  }
+};
+    ]]></content>
+    <tabTrigger>LLboiler</tabTrigger>
+    <description>Linked List Node Boilerplate</description>
+    <scope>source.c++</scope>
+</snippet>
+
+<snippet>
+    <content><![CDATA[
+${1:void} ${2:functionName}(${3:int arg}) {
+    $0
+}
+    ]]></content>
+    <tabTrigger>funboiler</tabTrigger>
+    <description>C++ Function Definition</description>
+    <scope>source.c++</scope>
+</snippet>
+
+<snippet>
+    <content><![CDATA[
+cout << "${1}" << endl;
+    ]]></content>
+    <tabTrigger>co</tabTrigger>
+    <description>C++ cout Statement</description>
+    <scope>source.c++</scope>
+</snippet>
+
+<snippet>
+    <content><![CDATA[
+cin >> ${1};
+    ]]></content>
+    <tabTrigger>ci</tabTrigger>
+    <description>C++ cin Statement</description>
+    <scope>source.c++</scope>
+</snippet>
